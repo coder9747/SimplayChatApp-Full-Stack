@@ -1,127 +1,22 @@
-*{
-    /* border:2px solid red; */
-  }
-  body
-  {
-    height: 100vh;
-    width:100vw;
-    border:2px solid red;
-    background-color: #e9ecf0;
-  }
-  .main
-  {
-    position: relative;
-    left:50%;
-    transform: translate(-50%,10%);
-    display: flex;
-    flex-direction: column;
-    height:500px;
-    width:400px;
-    /* border:2px solid red; */
-    position:relative;
-    background-color: #240e32;
-  }
-  .joineduser
-  {
-    position:absolute;
-    right:-300px;
-    height:max-content;
-    padding:20px;
-    width:250px;
-  }
-  h1
-  {
-    text-align: center;
-    color: white;
-  }
-  .chatBody
-  {
-    height:100%;
-    overflow-y: scroll;
-    overflow-x:hidden;
-    padding:2px 10px;
-  }
-  .chatBody::-webkit-scrollbar
-  {
-    background-color: rgb(81, 81, 84);
-  }
-  .input
-  {
-    height:55px;
-    position:relative;
-  }
-  .input input
-  {
-    position:absolute;
-    height:100%;
-    width:100%;
-    background-color: #392f40;
-    font-size: 1.4rem;
-    color: white;
-    outline: none;
-    padding:2px 10px;
-  }
-  .input button
-  {
-    height:100%;
-    width:70px;
-    position: relative;
-    float: right;
-    border-radius: 9px;
-    color: aliceblue;
-    background-color: #392f40;
-    border:1px solid gray;
-  }
-  .online
-  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-.usermessage
+.user-online-box
 {
-  color: white;
+  /* border:2px solid red; */
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding:2px 5px;
+  border-radius: 8px;
+  align-items: center;
+  margin-top:10px;
+  background-color: rgba(233, 228, 206, 0.734);;
+}
+.greendot
+{
+  height:10px;
+  width:10px;
+  border-radius: 50%;
   background-color: green;
-  border-radius: 9px;
-  width: 200px;
-  margin:5px 0px;
-  padding-left:10px;
-
-
 }
-.username
+.online-user-name
 {
-  height:5px;
-  border: 2px soli green;
-  font-size: 0.8rem;
-  margin-bottom: 5px;
-  color: rgb(193, 158, 158);
-  margin-left:8px;
-  text-align: center;
-  margin:4px 0px;
-  
-
-}
-.usertext
-{
-  font-size: 1.4rem;
-  margin-left:8px;
-  font-size:1.2rem;
-  margin:3px;
-  margin-left: 5px;
-  
-}
-.mymessage
-{
-  color: white;
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(28, 47, 80);
-  border-radius: 9px;
-  width: 200px;
-  float: right;
-  margin-top:5px;
-  margin:4px 0px;
+  font-size: 1.2rem;
 }
