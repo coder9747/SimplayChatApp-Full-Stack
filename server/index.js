@@ -12,7 +12,10 @@ const io = new Server(server,{
 
 io.on("connection",(socket)=>
 {
-    console.log(socket.id);
+    socket.on("roomJoined",(data)=>
+    {
+        console.log(data);
+    })
 })
 
 
